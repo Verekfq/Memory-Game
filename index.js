@@ -1,9 +1,4 @@
-const imagesList = [
-  "../projectS/png/1.png",
-  "../projectS/png/2.png",
-  "../projectS/png/3.png",
-  "../projectS/png/4.png",
-];
+const imagesList = ["png/1.png", "png/2.png", "png/3.png", "png/4.png"];
 
 const root = document.getElementById("root");
 const shuffledImages = [...imagesList.slice(0, 4), ...imagesList.slice(0, 4)];
