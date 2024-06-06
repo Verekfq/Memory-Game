@@ -1,0 +1,30 @@
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* View height / view width */
+}
+
+.gameBox {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(2, 150px);
+  gap: 2rem;
+}
+.imageBox > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.closedImageBox {
+  background-color: lightgray;
+  background-image: url("../pro/memoryGame/back.png");
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.closedImageBox > * {
+  display: none;
+}
